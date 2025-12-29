@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Eventify</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-calendar-check"></i> Eventify
+    </div>
+
+    <nav>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="event.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+      <a href="booking.html" class="active"><i class="fa-solid fa-ticket"></i> Booking</a>
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Book Your Tickets</h1>
+    <p>Reserve your spot in a few clicks</p>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-form">
+    <div class="form-container">
+
+     <div class="form-container">
+
+  <!-- EVENT IMAGE + INFO -->
+  <div class="event-info">
+    <img id="eventImage" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Event">
+    <h3 id="eventTitle">Music Night Live</h3>
+    <p><i class="fa-solid fa-location-dot"></i> Manila</p>
+    <p>Price per ticket: <span id="pricePerTicket">₱999</span></p>
+  </div>
+
+  <!-- BOOKING FORM -->
+  <div class="form-fields">
+    <label for="eventSelect">Select Event:</label>
+    <select id="eventSelect">
+      <option value="Music Night Live" data-price="999" data-location="Manila" data-img="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">Music Night Live</option>
+      <option value="Rock Festival" data-price="1199" data-location="Cebu" data-img="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">Rock Festival</option>
+      <option value="Tech Conference 2025" data-price="1499" data-location="Taguig" data-img="https://images.unsplash.com/photo-1518770660439-4636190af475">Tech Conference 2025</option>
+      <option value="Art & Culture Expo" data-price="799" data-location="Davao" data-img="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">Art & Culture Expo</option>
+      <option value="City Marathon" data-price="599" data-location="Clark" data-img="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">City Marathon</option>
+      <option value="AI Summit" data-price="1899" data-location="Taguig" data-img="https://images.unsplash.com/photo-1531482615713-2afd69097998">AI Summit</option>
+    </select>
+
+    <label for="tickets">Number of Tickets:</label>
+    <input type="number" id="tickets" min="1" value="1">
+
+    <label>Total Price:</label>
+    <p id="totalPrice">₱999</p>
+
+    <button id="bookNow" class="btn-primary">Book Now</button>
+  </div>
+
+</div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Eventify. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="booking.js"></script>
+</body>
+</html>
